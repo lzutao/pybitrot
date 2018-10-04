@@ -89,7 +89,6 @@ def ror(int_type, size, offset):
     """
     mask = (1 << size) - 1
     offset %= size
-    right = (int_type & mask )>> offset
+    right = (int_type & mask) >> offset
     circular = (int_type << (size - offset)) & mask
     return circular | right
-
