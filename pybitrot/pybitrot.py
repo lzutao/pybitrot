@@ -11,7 +11,7 @@ def rol8(int_type, offset):
 
     Returns the value of int_type rotated left by (offset mod 8) bits.
     """
-    return __rol(int_type, 8, offset)
+    return rol(int_type, 8, offset)
 
 
 def rol16(int_type, offset):
@@ -19,7 +19,7 @@ def rol16(int_type, offset):
 
     Returns the value of int_type rotated left by (offset mod 16) bits.
     """
-    return __rol(int_type, 16, offset)
+    return rol(int_type, 16, offset)
 
 
 def rol32(int_type, offset):
@@ -27,7 +27,7 @@ def rol32(int_type, offset):
 
     Returns the value of int_type rotated left by (offset mod 32) bits.
     """
-    return __rol(int_type, 32, offset)
+    return rol(int_type, 32, offset)
 
 
 def rol64(int_type, offset):
@@ -35,7 +35,7 @@ def rol64(int_type, offset):
 
     Returns the value of int_type rotated left by (offset mod 64) bits.
     """
-    return __rol(int_type, 64, offset)
+    return rol(int_type, 64, offset)
 
 
 def ror8(int_type, offset):
@@ -43,7 +43,7 @@ def ror8(int_type, offset):
 
     Returns the value of int_type rotated right by (offset mod 8) bits.
     """
-    return __ror(int_type, 8, offset)
+    return ror(int_type, 8, offset)
 
 
 def ror16(int_type, offset):
@@ -51,7 +51,7 @@ def ror16(int_type, offset):
 
     Returns the value of int_type rotated right by (offset mod 16) bits.
     """
-    return __ror(int_type, 16, offset)
+    return ror(int_type, 16, offset)
 
 
 def ror32(int_type, offset):
@@ -59,7 +59,7 @@ def ror32(int_type, offset):
 
     Returns the value of int_type rotated right by (offset mod 32) bits.
     """
-    return __ror(int_type, 32, offset)
+    return ror(int_type, 32, offset)
 
 
 def ror64(int_type, offset):
@@ -67,11 +67,11 @@ def ror64(int_type, offset):
 
     Returns the value of int_type rotated right by (offset mod 64) bits.
     """
-    return __ror(int_type, 64, offset)
+    return ror(int_type, 64, offset)
 
 
-def __rol(int_type, size, offset):
-    """__rol(int_type, size, offset) -> int
+def rol(int_type, size, offset):
+    """rol(int_type, size, offset) -> int
 
     Returns the value of int_type rotated left by (offset mod size) bits.
     """
@@ -82,8 +82,8 @@ def __rol(int_type, size, offset):
     return left | circular
 
 
-def __ror(int_type, size, offset):
-    """__ror(int_type, size, offset) -> int
+def ror(int_type, size, offset):
+    """ror(int_type, size, offset) -> int
 
     Returns the value of int_type rotated right by (offset mod size) bits.
     """

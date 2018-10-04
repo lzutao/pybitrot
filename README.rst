@@ -1,7 +1,7 @@
 pybitrot
 ========
 
-|build status|
+|build_status|
 
 Python Bits Rotation module
 
@@ -29,5 +29,5 @@ License
 This project is licensed under the MIT License - see the `<LICENSE>`__ file for details.
 
 .. _contributors: https://github.com/lzutao/pybitrot/graphs/contributors
-.. |build status|: image:: https://travis-ci.com/lzutao/pybitrot.svg?branch=master
+.. |build_status| image:: https://travis-ci.com/lzutao/pybitrot.svg?branch=master
     :target: https://travis-ci.com/lzutao/pybitrot
